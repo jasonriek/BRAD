@@ -37,6 +37,13 @@ class Controls:
         self.calibration()
         self.setLegAngle()
         self.Thread_conditiona=threading.Thread(target=self.condition)
+        self._speed = 8
+    
+    def setSpeed(self, speed):
+        self._speed = speed
+
+    def speed(self):
+        return self._speed
 
     def readFromTxt(self,filename):
         filename_path = os.path.join(os.path.dirname(__file__), filename+'.txt')
@@ -158,6 +165,7 @@ class Controls:
           if leg_lenght[i] > 248 or leg_lenght[i] < 90:
             flag=False
         return flag
+    
     def condition(self):
         while True:
             if (time.time()-self.timeout)>10 and  self.timeout!=0 and self.order[0]=='':
@@ -172,7 +180,8 @@ class Controls:
                 z=self.restriction(int(self.order[3]),-20,20)
                 self.posittion(x,y,z)
                 self.flag=0x01
-                self.order=['','','','','',''] 
+                self.order=['','','','','','']
+                
             elif cmd.CMD_ATTITUDE in self.order and len(self.order)==4:
                 if self.flag!=0x02:
                     self.relax(False)
@@ -183,7 +192,8 @@ class Controls:
                 self.coordinateTransformation(point)
                 self.setLegAngle()
                 self.flag=0x02
-                self.order=['','','','','',''] 
+                self.order=['','','','','','']
+            
             elif cmd.CMD_MOVE in self.order and len(self.order)==6:
                 if self.order[2] =="0" and self.order[3] =="0":
                     self.run(self.order)
@@ -193,6 +203,7 @@ class Controls:
                         self.relax(False)
                     self.run(self.order)
                     self.flag=0x03
+
             elif cmd.CMD_BALANCE in self.order and len(self.order)==2:
                 if self.order[1] =="1":
                     self.order=['','','','','',''] 
@@ -200,6 +211,7 @@ class Controls:
                         self.relax(False)
                     self.flag=0x04
                     self.imu6050()
+
             elif cmd.CMD_CALIBRATION in self.order:
                 self.timeout=0
                 self.calibration()
@@ -243,7 +255,8 @@ class Controls:
                         self.setLegAngle()
                     elif self.order[1]=="save":
                         self.saveToTxt(self.calibration_leg_point,'point')
-                self.order=['','','','','',''] 
+                self.order=['','','','','','']
+
     def relax(self,flag):
         if flag:
             self.servo.relax()
@@ -347,6 +360,7 @@ class Controls:
         time.sleep(2)
         self.imu.Error_value_accel_data,self.imu.Error_value_gyro_data=self.imu.average_filter()
         time.sleep(1)
+
         while True:
             if self.order[0]!="":
                 break
@@ -361,6 +375,10 @@ class Controls:
             self.setLegAngle()
  
     def run(self,data,Z=40,F=64):#example : data=['CMD_MOVE', '1', '0', '25', '10', '0']
+
+        if data and data[0] == cmd.CMD_MOVE:
+            self.setSpeed(int(data[4]))
+
         gait=data[1]
         x=self.restriction(int(data[2]),-35,35)
         y=self.restriction(int(data[3]),-35,35)

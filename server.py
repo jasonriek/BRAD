@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from celery import Celery
-from tasks import test
+from tasks import test, get_variable
 import os
 import json
 import platform
@@ -26,5 +26,21 @@ def connection_test():
     test.apply_async()
     return f"Successfully connected to B.R.A.D"
 
-#if __name__ == '__main__':
-#    app.run(host='0.0.0.0', port=3000)
+@app.route('/variable', methods=['POST'])
+def variable_route():
+    try:
+        # Access JSON data from the request body
+        data = request.json
+        variable_name = data.get('variable_name')
+
+        #get_variable.apply_async(args=[variable_name])
+        result = get_variable(variable_name)
+        return jsonify({variable_name: str(result)})
+
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=3000)
