@@ -19,6 +19,7 @@ class Controls:
         self.GPIO_4 = 4
         GPIO.setup(self.GPIO_4,GPIO.OUT)
         GPIO.output(self.GPIO_4,False)
+        self.running = True
         self.imu=IMU()
         self.servo=Servo()
         self.move_flag=0x01
@@ -36,7 +37,7 @@ class Controls:
         self.order=['','','','','','']
         self.calibration()
         self.setLegAngle()
-        self.Thread_conditiona=threading.Thread(target=self.condition)
+        self.thread_condition=threading.Thread(target=self.condition)
         self._speed = 8
     
     def setSpeed(self, speed):
@@ -167,7 +168,7 @@ class Controls:
         return flag
     
     def condition(self):
-        while True:
+        while self.running:
             if (time.time()-self.timeout)>10 and  self.timeout!=0 and self.order[0]=='':
                 self.timeout=time.time()
                 self.relax(True)

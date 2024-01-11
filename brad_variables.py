@@ -10,4 +10,4 @@ if __name__ == '__main__':
         variable_name = sys.argv[1]
         if variable_name:
             variable_name = variable_name.strip().lower()
-        print(brad.getVariable(variable_name))
+        print(brad.getVariable(variable_name, True))

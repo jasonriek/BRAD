@@ -1,0 +1,179 @@
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+
+
+NEW RUN at: 2024-01-07 20:54:12.758922
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:22:24.518311
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>ReferenceError: WebSocket is not defined<br> &nbsp; &nbsp;at /home/jasonr/prod/jay-creations/index.js:196:35<br> &nbsp; &nbsp;at Set.forEach (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at EventEmitter.handleImageEvent (/home/jasonr/prod/jay-creations/index.js:195:17)<br> &nbsp; &nbsp;at EventEmitter.emit (node:events:514:28)<br> &nbsp; &nbsp;at /home/jasonr/prod/jay-creations/index.js:162:18<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/home/jasonr/prod/jay-creations/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at next (/home/jasonr/prod/jay-creations/node_modules/express/lib/router/route.js:144:13)<br> &nbsp; &nbsp;at Route.dispatch (/home/jasonr/prod/jay-creations/node_modules/express/lib/router/route.js:114:3)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/home/jasonr/prod/jay-creations/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at /home/jasonr/prod/jay-creations/node_modules/express/lib/router/index.js:284:15</pre>
+</body>
+</html>
+
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:23:38.286685
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Error Camera __init__ sequence did not complete."}
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:26:54.194791
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:33:38.490822
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:34:38.943920
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:37:54.382708
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:41:38.731895
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 21:52:07.119156
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 22:54:08.605883
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 22:55:03.788627
+{"message":"___RUNNING start..."}
+{"message":"___RUNNING start..."}
+{"message":"___RUNNING start..."}
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:26.813242
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:26.906994
+{"message":"___start ran successfully"}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:27.088942
+
+
+NEW RUN at: 2024-01-07 23:39:27.090929
+{"message":"___RUNNING start..."}
+{"message":"___RUNNING start..."}
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:31.961811
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:32.162295
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:32.264283
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:32.342168
+{"message":"___RUNNING start..."}
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:35.376252
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:39:35.461116
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:41:43.943925
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:42:08.745288
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-07 23:46:45.978266

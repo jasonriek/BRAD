@@ -1,0 +1,138 @@
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-08 15:03:54.873576
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:24:14.755712
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"move_forward Error: Traceback (most recent call last):\n  File \"/home/jasonr/brad/roam_calls.py\", line 53, in move_forward_call\n    drone.runUntilTimeout(drone.moveForward, move_forward.duration, speed=move_forward.velocity)\n  File \"/home/jasonr/brad/brad.py\", line 61, in runUntilTimeout\n    self.controls.order = ['','','','','','']\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'order'\n"}
+{"message":"(!)___move_forward failed"}
+{"message":"___RUNNING move_left..."}
+{"message":"move_left Error: Traceback (most recent call last):\n  File \"/home/jasonr/brad/roam_calls.py\", line 71, in move_left_call\n    drone.runUntilTimeout(drone.moveLeft, move_left.duration, speed=move_left.velocity)\n  File \"/home/jasonr/brad/brad.py\", line 61, in runUntilTimeout\n    self.controls.order = ['','','','','','']\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'order'\n"}
+{"message":"(!)___move_left failed"}
+{"message":"___RUNNING move_backward..."}
+{"message":"move_backward Error: Traceback (most recent call last):\n  File \"/home/jasonr/brad/roam_calls.py\", line 89, in move_backward_call\n    drone.runUntilTimeout(drone.moveLeft, move_backward.duration, speed=move_backward.velocity)\n  File \"/home/jasonr/brad/brad.py\", line 61, in runUntilTimeout\n    self.controls.order = ['','','','','','']\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'order'\n"}
+{"message":"(!)___move_backward failed"}
+{"message":"___RUNNING move_right..."}
+{"message":"move_right Error: Traceback (most recent call last):\n  File \"/home/jasonr/brad/roam_calls.py\", line 107, in move_right_call\n    drone.runUntilTimeout(drone.moveLeft, move_right.duration, speed=move_right.velocity)\n  File \"/home/jasonr/brad/brad.py\", line 61, in runUntilTimeout\n    self.controls.order = ['','','','','','']\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'order'\n"}
+{"message":"(!)___move_right failed"}
+
+
+NEW RUN at: 2024-01-08 16:25:05.371543
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+{"message":"___RUNNING move_backward..."}
+{"message":"___move_backward ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:28:30.061955
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+{"message":"___RUNNING move_backward..."}
+{"message":"___move_backward ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:30:40.374879
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+{"message":"___RUNNING move_backward..."}
+{"message":"___move_backward ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:32:37.334221
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:33:25.952274
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:34:37.156853
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:36:19.005374
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:37:12.913928
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:42:59.649814
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:43:37.912746
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:45:10.266349
+{"message":"___RUNNING start..."}
+{"message":"___start ran successfully"}
+{"message":"___RUNNING move_forward..."}
+{"message":"___move_forward ran successfully"}
+{"message":"___RUNNING move_right..."}
+{"message":"___move_right ran successfully"}
+{"message":"___RUNNING move_left..."}
+{"message":"___move_left ran successfully"}
+{"message":"___RUNNING move_backward..."}
+{"message":"___move_backward ran successfully"}
+{"message":"___RUNNING capture_image..."}
+{"message":"Image taken and saved..."}
+ROAM is processing image data...
+{"message":"___capture_image ran successfully"}
+
+
+NEW RUN at: 2024-01-08 16:46:36.699950

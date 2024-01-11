@@ -9,12 +9,29 @@ def test():
     path = os.path.join(os.path.dirname(__file__), 'brad_test.py')
     
     # Using Popen to run the command asynchronously
-    process = subprocess.Popen(['sudo', 'python', path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    #process = subprocess.Popen(['sudo', 'python', path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     # Retrieve the output and error messages if needed
-    output, error = process.communicate()
-    print(f"output: {str(output)}")
+    #output, error = process.communicate()
+    #print(f"output: {str(output)}")
     return "GPIO operation completed successfully"
+
+@app.task
+def run_roam(path):
+    try:
+        value = 'ROAM running...'
+        process = subprocess.Popen(['sudo', 'python', path], stdout=subprocess.PIPE)
+        stdout, stderr = process.communicate()
+        # Check if the command was successful
+        if process.returncode == 0:
+            value = stdout.strip()
+        else:
+            # Handle errors if needed
+            value = f"Error: {stderr.strip()}"
+
+    except Exception as e:
+        value = f'run_roam task failed: {str(e)}'
+    return value
 
 @app.task
 def get_variable(variable_name):
